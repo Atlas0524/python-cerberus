@@ -6,8 +6,7 @@ class LogInPageLocators:
     password_input = (By.ID, "password")
     login_button = (By.ID, "login-button")
     login_logo = (By.CLASS_NAME, "login_logo")
-    error_username_required_box = (By.CSS_SELECTOR, '[data-test="error"]')
-    error_password_required_box = (By.CSS_SELECTOR, '[data-test="error"]')
+    login_error_message_box = (By.CSS_SELECTOR, '[data-test="error"]')
     error_close_button = (By.CLASS_NAME, "error-button")
 
 

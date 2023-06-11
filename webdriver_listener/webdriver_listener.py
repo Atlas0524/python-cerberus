@@ -35,6 +35,8 @@ class WebDriverListener(AbstractEventListener):
             self.logger.info(f"Clicking on {element.get_attribute('class')}")
         elif element.get_attribute("name") is not None:
             self.logger.info(f"Clicking on {element.get_attribute('name')}")
+        else:
+            self.logger.info("Clicking on element")
 
     def after_click(self, element, driver):
         self.logger.info("Clicked")
